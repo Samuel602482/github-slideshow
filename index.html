@@ -1,13 +1,29 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confeitaria especializada em bolos">
+    <meta name="keywords" content="Doces, kit festa, Boleira, Bolos Sumaré">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Samuel Melo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    <title>Cakes Melo - kit festa</title>
+</head>
+<body>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<nav class="div.navbar">
+       <img src="img/cakes-melo-logo.png" alt="cakes-melo-logo">
+    <ul>    
+        <li><a href="principal">Principal</a></li>
+        <li><a href="quemsomos.html">Quem somos</a></li>
+        <li><a href="portifolio.html">Portifólio</a></li>
+        <li style="float:right"><a class="active" href="contato.html">Contatos</a></li>
+      </ul>
+</nav>
+
+</body>
+</html>
